@@ -23,4 +23,6 @@ body{
   --webkit-font-smoothing: antialised;
   background-color: var(--color-black);
   color: var(--color-white);
+  overflow-x:hidden;
+  width: 100vw;
 }
