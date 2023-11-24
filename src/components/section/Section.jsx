@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 const Section = ({ data, title }) => {
   const [collapse, setCollapse] = useState(true);
   return (
-    <Box px={2}>
+    <Box px={2} my={4}>
       <Box display={"flex"} justifyContent={"space-between"}>
         <Typography
           sx={{
@@ -30,6 +30,7 @@ const Section = ({ data, title }) => {
             lineHeight: "normal",
             marginRight: "10px",
             cursor: "pointer",
+            display:{xs:"none",sm:"block",md:"block"}
           }}
         >
           {collapse ? "Show All" : "Collapse"}
