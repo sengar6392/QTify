@@ -3,6 +3,7 @@ import HeroSection from "../components/hero-section/HeroSection";
 import Albums from "../components/albums/Albums";
 import Search from "../components/search/Search";
 import Songs from "../components/songs/Songs";
+import Faq from "../components/faq/Faq";
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <HeroSection/>
       <Albums/>
       <Songs/>
+      <Faq/>
     </>
   );
 };

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Section from "../section/Section";
 import BasicTabs from "../basic-tabs/BasicTabs";
+import { Box, CircularProgress } from "@mui/material";
 
 const Songs = () => {
   const [songs, setSongs] = React.useState([]);
@@ -47,6 +48,12 @@ const Songs = () => {
           }
         />
       </>
+    );
+  else
+    return (
+      <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <CircularProgress color="success" />
+      </Box>
     );
 };
 
