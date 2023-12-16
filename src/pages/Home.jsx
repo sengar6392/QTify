@@ -4,6 +4,7 @@ import Albums from "../components/albums/Albums";
 import Search from "../components/search/Search";
 import Songs from "../components/songs/Songs";
 import Faq from "../components/faq/Faq";
+import MusicPlayer from "../components/music-player/MusicPlayer";
 
 
 const Home = () => {
