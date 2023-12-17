@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Section from "../section/Section";
 import BasicTabs from "../basic-tabs/BasicTabs";
 import { Box, CircularProgress } from "@mui/material";
+import SearchResults from "../searchResults/SearchResults";
 
 const Songs = () => {
   const [songs, setSongs] = React.useState([]);
@@ -25,7 +26,7 @@ const Songs = () => {
     }
   };
   const filterSongsByGenre = (songs, genre) => {
-    return songs.filter((song) => song.genre.key === genre.key);
+    return songs.filter((song) => song?.genre.key === genre.key);
   };
   useEffect(() => {
     fetchSongs();
@@ -47,6 +48,7 @@ const Songs = () => {
             />
           }
         />
+        <SearchResults data={songs}/>
       </>
     );
   else

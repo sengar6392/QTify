@@ -27,3 +27,6 @@ body{
   overflow-x:hidden;
   width: 100vw;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
