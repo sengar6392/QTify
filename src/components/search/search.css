@@ -30,6 +30,7 @@
   line-height: 19.2px;
   letter-spacing: 0.2px;
   color: var(--color-black);
+  border-radius: 0px 0px 0px 0px;
   border: none;
 }
 
@@ -42,6 +43,9 @@
   font-size: 20px;
   text-align: center;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .search-button-mobile{
   height: 48px;
@@ -52,6 +56,10 @@
   font-size: 20px;
   text-align: center;
   border: none;
+  color: rgba(0, 0, 0, 0.591);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input:focus {
