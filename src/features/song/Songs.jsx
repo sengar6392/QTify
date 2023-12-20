@@ -19,10 +19,10 @@ const Songs = () => {
     (state) => state.song
   );
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchSongsThunk());
-    dispatch(fetchGenresThunk());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchSongsThunk());
+  //   dispatch(fetchGenresThunk());
+  // }, []);
   useEffect(() => {
     if (status === "success") {
       dispatch(filterSongsByGenre(genres[selectedTab]));

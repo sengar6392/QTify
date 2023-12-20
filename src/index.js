@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import { Provider } from "react-redux";
 import { store } from "./app/store";
+import AlbumDetailPage from "./pages/AlbumDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/album-detail/:id",
+        element: <AlbumDetailPage />,
       },
     ],
   },

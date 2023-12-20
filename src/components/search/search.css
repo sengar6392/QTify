@@ -34,7 +34,7 @@
   border: none;
 }
 
-.search-button {
+.close-button {
   height: 48px;
   width: 66px;
   padding: 5px;
@@ -46,8 +46,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba(0, 0, 0, 0.591);
+  cursor: pointer;
 }
-.search-button-mobile{
+.close-button-mobile{
   height: 48px;
   width: 66px;
   padding: 5px;
@@ -60,6 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 input:focus {

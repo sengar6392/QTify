@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import { useSelector } from "react-redux";
 import SearchResults from "../searchResults/SearchResults";
 import CloseIcon from "@mui/icons-material/Close";
+import Logo from "../logo/Logo";
 
 const Search = ({ placeHolder, type }) => {
   const [searchInput, setSearchInput] = useState("");
@@ -50,13 +51,19 @@ const Search = ({ placeHolder, type }) => {
         />
         {type === "mobile" ? (
           searchInput.length > 0 ? (
-            <Box className="search-button-mobile">
+            <Box className="close-button-mobile">
               <CloseIcon onClick={()=>setSearchInput("")}/>
             </Box>
           ) : null
         ) : (
-          <Box className="search-button">
-            <SearchIcon />
+          <Box className="close-button">
+            {
+              searchInput.length > 0 ? (
+                  <CloseIcon onClick={()=>setSearchInput("")}/>
+              ) : (
+                <SearchIcon/>
+              )
+            }
           </Box>
         )}
       </form>
